@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------------------------------Heading styles -------------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 120px 0 120px;
+}
+
+.header h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+.nav {
+    /* display: flex; */
+}
+
+.nav-items {
+    display: flex;
+    gap: 34px;
+    color: #3A3A3A;
+}
+
+.nav li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.fa-solid{
+    font-size: 25px;
+}
+
+
+/*------------------------------------------- Banner Styles -----------------------------------*/
+
+.main{
+    background-position: right;
+    background-image: url(../images/main-camera.png);
+    background-repeat: no-repeat;
+    
+}
+.banner{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 50px;
+    gap: 308px;
+    
+    
+}
