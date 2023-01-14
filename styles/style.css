@@ -108,21 +108,28 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    border: 2px solid rgb(231, 231, 231);
-    /* border-image: 
-    linear-gradient(
-      to top, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-     */
-
+    /* border: 2px solid rgb(231, 231, 231);
+   
     border-left: none;
-    border-right: none;
+    border-right: none; */
     margin: 80px 300px 150px 300px;
 
 }
-
+hr{
+    width: 72%;
+    border: 0;
+    margin: 0 auto;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.hr-first{
+    position: relative;
+    top: 80px;
+}
+.hr-second{
+    position: relative;
+    bottom: 155px;
+}
 .all-images img {
     height: 100px;
     width: 100px;
@@ -221,11 +228,13 @@
     align-items: center;
     margin-bottom: 100px;
 }
-.featured-img{
+
+.featured-img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border: 0;
     border-radius: 10px;
 }
+
 .right-side h2 {
     font-weight: 700;
     font-size: 42px;
@@ -258,7 +267,7 @@
 
 .footer {
     background-color: #0A0826;
-    
+
 }
 
 .footer-info {
@@ -281,19 +290,148 @@
     font-size: 14px;
     color: #D9DBE1;
     line-height: 200%;
-    
+
 }
-.socials{
-    
+
+.socials {
+
     display: flex;
     gap: 15px;
     margin-top: 10px;
     /* margin-bottom: 10px; */
-    font-size:18px ;
+    font-size: 18px;
 }
-.socials .fa-brands{
-    background-color:#262344 ;
+
+.socials .fa-brands {
+    background-color: #262344;
     padding: 8px;
     border: 0;
     border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------Media query---------------------------------------------------------------------------  */
+
+
+
+/*                         small device                      */
+
+@media screen and (max-width:688px) {
+    .nav {
+        display: none;
+    }
+
+    .header {
+        margin: 90px 200px 0 130px;
+        text-align: center;
+    }
+
+    .header h3{
+        width: 100%;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        gap: 0;
+        background-image: url(../images/Circle\ design.svg);
+        background-repeat: no-repeat;
+        background-position: right 5px top 0px;
+        background-size: 367px;
+        padding: 0 10px;
+    }
+
+    .banner-image {
+        height: 380px;
+    }
+
+    .banner-image img {
+        position: relative;
+        top: 33px;
+        height: 322px;
+    }
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0 0px;
+    }
+
+    .banner-info h2 {
+        font-size: 36px;
+        margin-top: 20px;
+
+    }
+
+    .btn {
+        padding: 10px 100px;
+    }
+
+    .products {
+        width: auto;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .see-more {
+        text-align: center;
+    }
+
+    .featured {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+        padding: 0px;
+        margin: 40px 0 0 0;
+        gap: 40px;
+    }
+
+    .featured img {
+        width: 90%;
+        margin-bottom: 38px;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .all-images {
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        margin-left: 0;
+        gap: 38px;
+        border: 0;
+
+
+    }
+
+    .footer-info h3 {
+        font-size: 16px;
+        color: #D9DBE1;
+    }
 }
